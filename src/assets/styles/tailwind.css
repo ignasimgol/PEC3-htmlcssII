@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CARDS */
+
 .speakers-card {
     @apply bg-gray-50 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1;
 }
@@ -12,4 +14,22 @@
   
 .speakers-content {
     @apply p-4;
+}
+
+/* LIST1 */
+
+.card-item {
+    @apply relative pl-16;
+}
+
+.card-circle {
+    @apply absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 text-green-600 font-semibold text-2xl;
+}
+
+.card-title {
+    @apply text-xl font-medium text-green-600 mb-2;
+}
+
+.card-text {
+    @apply text-gray-700 leading-relaxed;
 }
