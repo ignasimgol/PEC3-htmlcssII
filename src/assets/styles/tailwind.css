@@ -5,7 +5,7 @@
 /* CARDS */
 
 .speakers-card {
-    @apply bg-gray-50 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1;
+    @apply bg-off-white rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-1;
 }
   
 .speakers-image {
@@ -18,18 +18,18 @@
 
 /* LIST1 */
 
-.card-item {
+.list-item {
     @apply relative pl-16;
 }
 
-.card-circle {
-    @apply absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 text-green-600 font-semibold text-2xl;
+.list-circle {
+    @apply absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 text-primary font-semibold text-2xl;
 }
 
-.card-title {
-    @apply text-xl font-medium text-green-600 mb-2;
+.list-title {
+    @apply text-xl font-medium text-primary mb-2;
 }
 
-.card-text {
-    @apply text-gray-700 leading-relaxed;
+.list-text {
+    @apply text-dark-gray leading-relaxed;
 }
