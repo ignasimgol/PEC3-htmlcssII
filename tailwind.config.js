@@ -16,7 +16,7 @@ module.exports = {
           'orange': '#ffbb33',                  // $orange
           'dark-green': 'rgba(0, 255, 0, 0.2)',  // $dark-green
           'dark-green-2': 'rgba(0, 255, 0, 0.1)',// $dark-green-2
-          'black-transparent': 'rgba(0, 0, 0, 0.3)', // $black-transparent
+          'black-transparent': 'rgba(0, 0, 0, 0.5)', // $black-transparent
           'black-transparent-2': 'rgba(0, 0, 0, 0.9)', // $black-transparent-2
           'black-transparent-3': 'rgba(0, 0, 0, 0.1)', // $black-transparent-3
           'red-pwr': '#ff0000',                 // $red-pwr
