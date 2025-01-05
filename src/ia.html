@@ -5,80 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Inicio PEC 3</title>
   <link rel="stylesheet" href="./assets/styles/main.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Navbar -->
   <nav class="bg-white shadow-md">
-    <div class="container mx-auto px-32 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Cooking contest 2024 edition</h1>
-        <ul class="flex space-x-4">
-            <li><a href="#" class="text-gray-700 hover:text-black px-4 py-2 rounded transition">Home</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black px-4 py-2 rounded transition">The contest</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-black px-4 py-2 rounded transition">Recipes</a></li>
-            <li><a href="#" class="bg-black text-white px-4 py-2 rounded">Contestants</a></li>
+    <div class="container mx-auto px-4 md:px-16 lg:px-32 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-lg sm:text-xl font-bold text-black">Cooking contest 2024 edition</h1>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="text-gray-700 block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation Menu -->
+        <ul id="menu" class="hidden md:flex space-x-2 sm:space-x-4 flex-col md:flex-row mt-4 md:mt-0">
+            <li><a href="#" class="text-gray-700 hover:text-black px-2 sm:px-4 py-1 sm:py-2 rounded transition">Home</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-black px-2 sm:px-4 py-1 sm:py-2 rounded transition">The contest</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-black px-2 sm:px-4 py-1 sm:py-2 rounded transition">Recipes</a></li>
+            <li><a href="#" class="bg-black text-white px-2 sm:px-4 py-1 sm:py-2 rounded">Contestants</a></li>
         </ul>
     </div>
-</nav>
-
+  </nav>
   <!-- Hero Section -->
   <header class="bg-white">
-      <div class="container mx-auto px-32 text-center py-10">
-          <h2 class="text-6xl font-bold mb-4">Contestants</h2>
-          <p class="text-gray-500 text-xl">This section describes the recipes of the best contestants</p>
-      </div>
-      <div class="px-32">
-          <img src="assets/images/ia-figma.png" alt="Cooking contest" class="w-full h-auto">
-      </div>
+    <div class="container mx-auto px-4 md:px-16 lg:px-32 text-center py-8 sm:py-10">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black font-bold mb-8 sm:mb-12 mt-8 sm:mt-32">Contestants</h2>
+        <p class="text-black text-base sm:text-xl mb-16 sm:mb-32">This section describes the recipes of the best contestants</p>
+    </div>
+    <div class="px-4 md:px-16 lg:px-32">
+        <img src="assets/images/ia-figma.png" alt="Cooking contest" class="w-full h-auto">
+    </div>
   </header>
 
   <!-- Recipes Section -->
-  <section class="container mx-auto px-32 py-10">
-      <h3 class="text-2xl font-bold mb-6">The recipes</h3>
-      <p class="text-gray-600 mb-8">These are the recipes of the best contestants</p>
+    <section class="container mx-auto px-4 md:px-16 lg:px-32 py-8 sm:py-10 bg-white">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-black">The recipes</h3>
+        <p class="text-gray-500 text-lg mb-6 sm:mb-8">These are the recipes of the best contestants</p>
 
-      <div class="grid gap-6 md:grid-cols-3">
-          <!-- Card 1 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden">
-              <div class="p-4">
-                  <img src="assets/images/person1.webp" alt="John Cooper" class="w-12 h-12 rounded-full mb-4">
-                  <h4 class="text-lg font-bold">Cajun seafood pasta</h4>
-                  <p class="text-gray-600 mt-2">John Cooper</p>
-                  <p class="text-gray-500 mt-2 text-sm">This Cajun seafood pasta recipe is a hot one, but delicious!</p>
-              </div>
-          </div>
+        <div class="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 sm:mb-12">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden p-4 sm:p-6">
+            <h4 class="text-lg sm:text-xl font-semibold mb-12">Cajun seafood pasta</h4>
+            <div class="flex items-center space-x-4">
+                <img src="assets/images/person1.webp" alt="John Cooper" class="w-14 h-14 rounded-full border-2 border-red-500">
+                <div>
+                    <p class="text-black font-bold">John Cooper</p>
+                    <p class="text-gray-500 text-sm">This Cajun seafood pasta recipe is a hot one, but <span class="text-black font-semibold">delicious!</span></p>
+                </div>
+            </div>
+        </div>
 
-          <!-- Card 2 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden">
-              <div class="p-4">
-                  <img src="assets/images/person2.webp" alt="Marta Alonso" class="w-12 h-12 rounded-full mb-4">
-                  <h4 class="text-lg font-bold">Cedar planked salmon</h4>
-                  <p class="text-gray-600 mt-2">Marta Alonso</p>
-                  <p class="text-gray-500 mt-2 text-sm">Salmon reaches its full potential when it’s grilled on top of a cedar plank.</p>
-              </div>
-          </div>
+        <!-- Card 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden p-4 sm:p-6">
+            <h4 class="text-lg sm:text-xl font-semibold mb-12">Cedar planked salmon</h4>
+            <div class="flex items-center space-x-4">
+                <img src="assets/images/person2.webp" alt="Marta Alonso" class="w-14 h-14 rounded-full border-2 border-red-500">
+                <div>
+                    <p class="text-black font-bold">Marta Alonso</p>
+                    <p class="text-gray-500 text-sm">Salmon reaches its full potential when it’s grilled on top of a <span class="text-black font-semibold">cedar plank.</span></p>
+                </div>
+            </div>
+        </div>
 
-          <!-- Card 3 -->
-          <div class="bg-white shadow-md rounded-lg overflow-hidden">
-              <div class="p-4">
-                  <img src="assets/images/person3.webp" alt="Mary Ann Stones" class="w-12 h-12 rounded-full mb-4">
-                  <h4 class="text-lg font-bold">Poulet au vinaigre</h4>
-                  <p class="text-gray-600 mt-2">Mary Ann Stones</p>
-                  <p class="text-gray-500 mt-2 text-sm">Irresistible chicken, cooked with vinegar.</p>
-              </div>
-          </div>
-      </div>
+        <!-- Card 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden p-4 sm:p-6">
+            <h4 class="text-lg sm:text-xl font-semibold mb-12">Poulet au vinaigre</h4>
+            <div class="flex items-center space-x-4">
+                <img src="assets/images/person3.webp" alt="Mary Ann Stones" class="w-14 h-14 rounded-full border-2 border-red-500">
+                <div>
+                    <p class="text-black font-bold">Mary Ann Stones</p>
+                    <p class="text-gray-500 text-sm">Irresistible chicken, cooked with <span class="text-black font-semibold">vinegar.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto px-32 text-center">
-          <p>Cooking contest 2024 edition</p>
-          <div class="flex justify-center space-x-4 text-sm mt-2">
-              <a href="#" class="hover:underline">Recipes</a>
-              <a href="#" class="hover:underline">Contestants</a>
-              <a href="#" class="hover:underline">Contest editions</a>
-          </div>
-      </div>
-  </footer>
+  <footer class="bg-white px-4 sm:px-8 md:px-16 lg:px-32 py-8 border-t border-gray-200">
+    <div class="container flex flex-col lg:flex-row justify-between mx-auto">
+        <div class="mb-8 lg:mb-0 flex flex-col justify-between">
+            <p class="text-lg font-semibold mb-8 sm:mb-20">Cooking contest 2024 edition</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-black"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-500 hover:text-black"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-black"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-500 hover:text-black"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left text-sm">
+            <div>
+                <p class="font-bold pb-4">Recipes</p>
+                <ul class="text-gray-600">
+                    <li class="pb-4">Cajun seafood pasta</li>
+                    <li class="pb-4">Cedar planked salmon</li>
+                    <li class="pb-4">Poulet au vinaigre</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold pb-4">Contestants</p>
+                <ul class="text-gray-600">
+                    <li class="pb-4">John Cooper</li>
+                    <li class="pb-4">Marta Alonso</li>
+                    <li class="pb-4">Mary Ann Stones</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold pb-4">Contest editions</p>
+                <ul class="text-gray-600">
+                    <li class="pb-4">2024</li>
+                    <li class="pb-4">2023</li>
+                    <li class="pb-4">2022</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
